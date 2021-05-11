@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>폼테그</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="mystyle.css">
+    </head>
+    <body>
+        <p>개인정보 입력 폼 입니다.</p>
+        <form action="https://naver.com">
+                <fieldset>
+                    <legend>개인정보</legend>
+                    <lavel>아이디 </lavel>
+                    <input type="text" autofocus readonly value="aa123" name="name" placeholder="영문자숫자조합"><br>
+                    <lavel>비밀번호 </lavel>
+                    <input type="password" required name="pass" value="1234"><br>
+                    <label>주소</label>
+                    <input type="text" size="40" name="address"><br>
+                    <lavel>취미 </lavel>
+                    <input type="radio" name="hobby" checked>운동
+                    <input type="radio" name="hobby">음악감상
+                    <input type="radio" name="hobby">독서<br>
+                    <label>수강과목 </label>
+                    <input type="checkbox" name="subject">java
+                    <input type="checkbox" name="subject" checked>css
+                    <input type="checkbox" name="subject">spl<br>
+                    <label>직업 </label>
+                    <select name="job">
+                        <option value="1">직업선택</option> 
+                        <option value="2">개발자</option>  
+                        <option value="3" selected>의사</option> 
+                        <option value="4">기타</option>
+                    </select><br>
+                </fieldset>
+                <label>전달메세지 </label>
+                <textarea cols="10" rows="5" name="content"></textarea><br>
+                <input type="hidden" name="as" value="홍길동"><br>
+                <label>메일 </label>
+                <input type="email" name="email"><br>
+                <label>숫자입력 </label>
+                <input type="number" ><br>
+                <label>색상선택 </label>
+                <input type="color"><br>
+                <label>날짜선택 </label>
+                <input type="date"><br>
+                <input type="submit" value="회원가입"><input type="reset" value="취소"><br>
+                <input type="button" value="경고메시지" onclick="alert('메세지출력')"><br>
+                <input type="image" src="images/naver.jpg" width="100"> 
+        </form>
+        <dl>
+            <dt>Hello: </dt>
+            <dd>안녕하세요 입니다.</dd>
+            <dd>유의어 : Hi</dd>
+            <dt>Good Morning: </dt>
+            <dd>아침인사 입니다.</dd>
+            <dt>Good Night: </dt>
+            <dd>저녁인사 입니다.</dd>
+        </dl>
+    </body>
+</html>
