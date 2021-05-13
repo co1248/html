@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>동위 선택자</title>
+        <meta charset="utf-8">
+        <style>
+            /* 동위 선택자는 같은 위치에 있는 것들을 선택 */
+            h1 + h2 {
+                color: red;
+            }
+            /* 바로 뒤에 하나를 선택 */
+            h1 ~ h2 {
+                background: orange;
+            }
+            /* 뒤에 있는 걸 다 선택 */
+        </style>
+    </head>
+    <body>
+        <h1>Header - 1</h1>
+        <h2>Header - 2</h2>
+        <h2>Header - 2</h2>
+        <h2>Header - 2</h2>
+        <h2>Header - 2</h2>       
+    </body>
+</html>
