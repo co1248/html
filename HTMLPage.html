@@ -53,7 +53,18 @@
             border: 1px solid black;
             padding: 2px 10px;
         }
-
+        #main_gnb > ul > li > a:hover {
+            background-color: black;
+            color: white;
+        }
+        /* :hover를 붙으면 마우스 선택시 바뀐다. */
+        #main_gnb > ul > li:first-child >a {
+            border-radius: 10px 0 0 10px ;
+        }
+        /* li:first-child >a가first-child 그 첫번째 li태그의 하위 a태그에다가 */
+        #main_gnb > ul > li:last-child >a {
+            border-radius: 0 10px 10px 0;
+        }
         /* lnb메뉴 */
         #main_lnb > ul {
             overflow: hidden;
@@ -65,7 +76,17 @@
             display: block;
             border: 1px solid black;
             padding: 10px 20px;
-        }    
+        }
+        #main_lnb > ul > li > a:hover {
+            background-color: black;
+            color: white;
+        }
+        #main_lnb > ul > li:first-child >a {
+            border-radius: 10px 0 0 10px ;
+        }
+        #main_lnb > ul > li:last-child >a {
+            border-radius: 0 10px 10px 0;
+
         
     </style>
 </head>
