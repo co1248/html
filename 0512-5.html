@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ko">
+<head>
+   <meta charset="utf-8">
+   <title>Table Layout</title>
+   <style>
+       table,td {
+           border: 1px solid black;
+
+       }
+        /* 콤마를 쓰면 그룹선택자
+        콤마를 안쓰면 하위선택 */
+        .table1 {
+            border-collapse: collapse;
+            width: 300px;
+            table-layout: fixed;
+            /* 셀 너비를 균등하게 하고 싶을 때 */
+            word-break: break-all;
+            /* 줄바꿈 */
+            height: auto;
+        }
+        .table1 td {
+            width: 150px;
+            height: 50px;
+            border: 1px solid black;
+            padding: 5px;
+            text-align:center;
+            /* 좌우정렬 */
+            vertical-align: bottom;
+            /* 수직 정렬(테이블 셀안에서만 가능능 */
+        }
+   </style>
+</head>
+<body>
+    <h1>Table Layout</h1>
+    <table class="table1">
+        <tr>
+            <!-- <td>
+                한글로띄어쓰기없기길게붙여쓰기
+            </td>
+            <td>
+                long_description_without_space
+                long_description_without_space
+            </td> -->
+            <td>
+                한글
+            </td>
+            <td>
+                long
+            </td>
+        </tr>
+    </table>
+   
+
+</body>
+</html>
