@@ -15,21 +15,27 @@
 		border-bottom:1px solid black;
 	}
 	.header-text{
-		font-size:40px;
+		font-size:2em;
 		color:white;
 		text-align:center;
 		line-height:120px;
 	}
 	.content {   /* 본문 */
 		float:left;
+		font-size: 1.5em;
 		width:62.5%;
 		/* 600/960*100 */
 		height:400px;	
 		padding:1.5625%;
 		background-color:#ffd800;
 	}
+	.content img {
+		max-width: 100%;
+		height: auto;
+	}
 	.right-side {  /* 사이드 바 */
 		float:right;
+		font-size: 1.5em;
 		width:31.15%;
 		height:400px;
 		padding:1.5625%;
@@ -37,6 +43,7 @@
 	}
 	footer {  /* 푸터 */
 		clear:both;
+		font-size: 1.5em;
 		width: 100%;
 		height:120px;
 		background-color:#c3590a;
@@ -47,10 +54,11 @@
 <body>
 	<div id="wrapper">
 		<header>
-			<h1 class="header-text">반응형 레이아웃</h1>
+			<h1 class="header-text">가변 그리드 레이아웃</h1>
 		</header>
 		<section class="content">
 			<h4>본문</h4>
+            <img src="images/fireworks.png">
 		</section>
 		<aside class="right-side">
 			<h4>사이드바</h4>
